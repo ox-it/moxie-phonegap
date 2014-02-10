@@ -1,0 +1,3 @@
+[submodule "mobileoxford/moxie-js-client"]
+	path = mobileoxford/moxie-js-client
+	url = git@github.com:ox-it/moxie-js-client.git

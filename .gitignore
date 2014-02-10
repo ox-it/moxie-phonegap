@@ -1,0 +1,8 @@
+# Platform specific code
+mobileoxford/platforms/*
+
+# Built js/css
+mobileoxford/www/*
+
+# Phonegap plugins
+mobileoxford/plugins/*
