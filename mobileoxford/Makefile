@@ -36,23 +36,13 @@ assets:
 	cp -R $(MOXIEDIR)/css $(ASSETSDIR)
 
 splash-icons:
-	mkdir -p platforms/android/res/drawable-ldpi
-	mkdir -p platforms/android/res/drawable-mdpi
-	mkdir -p platforms/android/res/drawable-hdpi
-	mkdir -p platforms/android/res/drawable-xhdpi
-	mkdir -p platforms/android/res/drawable
-	cp $(MOXIEDIR)/images/android/ldpi.png platforms/android/res/drawable-ldpi/screen.png
-	cp $(MOXIEDIR)/images/android/mdpi.png platforms/android/res/drawable-mdpi/screen.png
-	cp $(MOXIEDIR)/images/android/hdpi.png platforms/android/res/drawable-hdpi/screen.png
-	cp $(MOXIEDIR)/images/android/xhdpi.png platforms/android/res/drawable-xhdpi/screen.png
-	cp $(MOXIEDIR)/images/android/mdpi.png platforms/android/res/drawable/screen.png
+	cp -r $(MOXIEDIR)/images/android/drawable-* platforms/android/res
 
 build-android:
 	mkdir -p $(PLATFORMDIR)
 	if [ ! -d $(PLUGINSDIR) ]; then \
 		$(MAKE) plugins; \
 	fi
-	$(PG) platform update android
 	$(MAKE) splash-icons;
 	$(PG) local build android
 	mkdir -p bin
