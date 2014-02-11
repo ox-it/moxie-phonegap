@@ -16,11 +16,10 @@ ANDROIDPACKAGE=uk.ac.ox.it.mobileoxford
 
 .DEFAULT: all
 .PHONY: all plugins
-all: assets android
+all: assets build-android
 
 plugins:
 	mkdir -p $(PLUGINSDIR)
-	mkdir -p $(PLATFORMDIR)
 	while read p; do \
 		$(PG) local plugin add $$p; \
 	done < $(PLUGINSTXT)
@@ -36,7 +35,8 @@ assets:
 	cp $(MOXIEDIR)/app/main-built.js $(ASSETSDIR)/app.js
 	cp -R $(MOXIEDIR)/css $(ASSETSDIR)
 
-android:
+build-android:
+	mkdir -p $(PLATFORMDIR)
 	if [ ! -d $(PLUGINSDIR) ]; then \
 		$(MAKE) plugins; \
 	fi
