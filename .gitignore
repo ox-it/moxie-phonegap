@@ -6,3 +6,6 @@ mobileoxford/www/*
 
 # Phonegap plugins
 mobileoxford/plugins/*
+
+# Binaries
+mobileoxford/bin/*
