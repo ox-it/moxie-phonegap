@@ -35,17 +35,30 @@ assets:
 	cp $(MOXIEDIR)/app/main-built.js $(ASSETSDIR)/app.js
 	cp -R $(MOXIEDIR)/css $(ASSETSDIR)
 
+splash-icons:
+	mkdir -p platforms/android/res/drawable-ldpi
+	mkdir -p platforms/android/res/drawable-mdpi
+	mkdir -p platforms/android/res/drawable-hdpi
+	mkdir -p platforms/android/res/drawable-xhdpi
+	mkdir -p platforms/android/res/drawable
+	cp $(MOXIEDIR)/images/android/ldpi.png platforms/android/res/drawable-ldpi/screen.png
+	cp $(MOXIEDIR)/images/android/mdpi.png platforms/android/res/drawable-mdpi/screen.png
+	cp $(MOXIEDIR)/images/android/hdpi.png platforms/android/res/drawable-hdpi/screen.png
+	cp $(MOXIEDIR)/images/android/xhdpi.png platforms/android/res/drawable-xhdpi/screen.png
+	cp $(MOXIEDIR)/images/android/mdpi.png platforms/android/res/drawable/screen.png
+
 build-android:
 	mkdir -p $(PLATFORMDIR)
 	if [ ! -d $(PLUGINSDIR) ]; then \
 		$(MAKE) plugins; \
 	fi
-	$(PG) build android
+	$(PG) platform update android
+	$(MAKE) splash-icons;
+	$(PG) local build android
 	mkdir -p bin
 	cp platforms/android/bin/$(ANDROIDAPP) bin/
 
 clean:
-	rm -rf plugins
 	rm -rf platforms
 	rm -rf www
 
