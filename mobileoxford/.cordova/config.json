@@ -1,6 +1,11 @@
-{"lib":
-    {"www":
-        {"id": "phonegap","version":"3.3.0", "uri": "https://github.com/ox-it/moxie-phonegap"}
+{
+    "lib": {
+        "www": {
+            "id": "phonegap",
+            "version": "3.3.0",
+            "uri": "https://github.com/ox-it/moxie-phonegap"
+        }
     },
-    "id": "uk.ac.ox.it.mobileoxford", "name":"MobileOxford"
+    "id": "uk.ac.ox.it.mobileoxford",
+    "name": "MobileOxford"
 }
