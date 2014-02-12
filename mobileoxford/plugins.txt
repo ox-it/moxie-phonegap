@@ -1,8 +1,8 @@
-org.apache.cordova.device
-org.apache.cordova.contacts
-org.apache.cordova.dialogs
-org.apache.cordova.splashscreen
-org.apache.cordova.geolocation
-https://github.com/phonegap-build/GAPlugin.git
-https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
-https://github.com/balistof/PushPlugin.git
+plugin-sources/cordova-plugin-device
+plugin-sources/cordova-plugin-contacts
+plugin-sources/cordova-plugin-dialogs
+plugin-sources/cordova-plugin-splashscreen
+plugin-sources/cordova-plugin-geolocation
+plugin-sources/PushPlugin
+plugin-sources/Calendar-PhoneGap-Plugin
+plugin-sources/GAPlugin
