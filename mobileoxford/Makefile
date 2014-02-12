@@ -35,21 +35,16 @@ assets:
 	cp $(MOXIEDIR)/app/main-built.js $(ASSETSDIR)/app.js
 	cp -R $(MOXIEDIR)/css $(ASSETSDIR)
 
-splash-icons:
-	cp -r $(MOXIEDIR)/images/android/drawable-* platforms/android/res
-
 build-android:
 	mkdir -p $(PLATFORMDIR)
 	if [ ! -d $(PLUGINSDIR) ]; then \
 		$(MAKE) plugins; \
 	fi
-	$(MAKE) splash-icons;
 	$(PG) local build android
 	mkdir -p bin
 	cp platforms/android/bin/$(ANDROIDAPP) bin/
 
 clean:
-	rm -rf platforms
 	rm -rf www
 
 install:
