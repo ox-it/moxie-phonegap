@@ -1,3 +1,27 @@
 [submodule "mobileoxford/moxie-js-client"]
 	path = mobileoxford/moxie-js-client
 	url = git@github.com:ox-it/moxie-js-client.git
+[submodule "mobileoxford/plugin-sources/PushPlugin"]
+	path = mobileoxford/plugin-sources/PushPlugin
+	url = git@github.com:ox-it/phonegap-pushplugin.git
+[submodule "mobileoxford/plugin-sources/GAPlugin"]
+	path = mobileoxford/plugin-sources/GAPlugin
+	url = https://github.com/phonegap-build/GAPlugin.git
+[submodule "mobileoxford/plugin-sources/Calendar-PhoneGap-Plugin"]
+	path = mobileoxford/plugin-sources/Calendar-PhoneGap-Plugin
+	url = https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-device"]
+	path = mobileoxford/plugin-sources/cordova-plugin-device
+	url = git@github.com:apache/cordova-plugin-device.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-contacts"]
+	path = mobileoxford/plugin-sources/cordova-plugin-contacts
+	url = git@github.com:apache/cordova-plugin-contacts.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-dialogs"]
+	path = mobileoxford/plugin-sources/cordova-plugin-dialogs
+	url = git@github.com:apache/cordova-plugin-dialogs.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-splashscreen"]
+	path = mobileoxford/plugin-sources/cordova-plugin-splashscreen
+	url = git@github.com:apache/cordova-plugin-splashscreen.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-geolocation"]
+	path = mobileoxford/plugin-sources/cordova-plugin-geolocation
+	url = git@github.com:apache/cordova-plugin-geolocation.git
