@@ -46,6 +46,8 @@ build-android:
 
 clean:
 	rm -rf www
+	rm -rf plugins
+	rm -rf platforms
 
 install:
 	adb uninstall $(ANDROIDPACKAGE)
