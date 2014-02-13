@@ -40,13 +40,11 @@ build-android:
 	if [ ! -d $(PLUGINSDIR) ]; then \
 		$(MAKE) plugins; \
 	fi
-	$(PG) build android
+	$(PG) local build android
 	mkdir -p bin
 	cp platforms/android/bin/$(ANDROIDAPP) bin/
 
 clean:
-	rm -rf plugins
-	rm -rf platforms
 	rm -rf www
 
 install:
