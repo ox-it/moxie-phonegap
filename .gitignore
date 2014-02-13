@@ -9,3 +9,6 @@ mobileoxford/plugins/*
 
 # Binaries
 mobileoxford/bin/*
+
+# Node packages
+node_modules/*
