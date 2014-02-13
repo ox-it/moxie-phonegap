@@ -9,7 +9,7 @@
 	url = https://github.com/phonegap-build/GAPlugin.git
 [submodule "mobileoxford/plugin-sources/Calendar-PhoneGap-Plugin"]
 	path = mobileoxford/plugin-sources/Calendar-PhoneGap-Plugin
-	url = https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+	url = https://github.com/davbo/Calendar-PhoneGap-Plugin.git
 [submodule "mobileoxford/plugin-sources/cordova-plugin-device"]
 	path = mobileoxford/plugin-sources/cordova-plugin-device
 	url = git@github.com:apache/cordova-plugin-device.git
