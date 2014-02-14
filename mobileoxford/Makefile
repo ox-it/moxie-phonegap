@@ -45,9 +45,9 @@ build-android:
 	cp platforms/android/bin/$(ANDROIDAPP) bin/
 
 clean:
-	rm -rf www
-	rm -rf plugins
-	rm -rf platforms
+	rm -rf www/*
+	rm -rf plugins/*
+	rm -rf platforms/*
 
 install:
 	adb uninstall $(ANDROIDPACKAGE)
