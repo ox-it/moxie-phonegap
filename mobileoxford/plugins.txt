@@ -3,6 +3,7 @@ plugin-sources/cordova-plugin-contacts
 plugin-sources/cordova-plugin-dialogs
 plugin-sources/cordova-plugin-splashscreen
 plugin-sources/cordova-plugin-geolocation
+plugin-sources/cordova-labs/statusbar
 plugin-sources/PushPlugin
 plugin-sources/Calendar-PhoneGap-Plugin
 plugin-sources/GAPlugin
