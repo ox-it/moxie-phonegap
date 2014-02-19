@@ -2,7 +2,8 @@ SHELL := /bin/bash -e
 
 PG=phonegap
 
-PLUGINSTXT=plugins.txt
+PLUGINSIOS=plugins-ios.txt
+PLUGINSANDROID=plugins-android.txt
 PLUGINSDIR=plugins
 
 ASSETSDIR=www
@@ -18,11 +19,17 @@ ANDROIDPACKAGE=uk.ac.ox.it.mobileoxford
 .PHONY: all plugins
 all: assets build-android
 
-plugins:
+plugins-ios:
 	mkdir -p $(PLUGINSDIR)
 	while read p; do \
 		$(PG) local plugin add $$p; \
-	done < $(PLUGINSTXT)
+	done < $(PLUGINSIOS)
+
+plugins-android:
+	mkdir -p $(PLUGINSDIR)
+	while read p; do \
+		$(PG) local plugin add $$p; \
+	done < $(PLUGINSANDROID)
 
 assets:
 	mkdir -p $(ASSETSDIR)
@@ -37,9 +44,6 @@ assets:
 
 build-android:
 	mkdir -p $(PLATFORMDIR)
-	if [ ! -d $(PLUGINSDIR) ]; then \
-		$(MAKE) plugins; \
-	fi
 	$(PG) local build android
 	mkdir -p bin
 	cp platforms/android/bin/$(ANDROIDAPP) bin/
