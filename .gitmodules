@@ -28,3 +28,6 @@
 [submodule "mobileoxford/plugin-sources/cordova-plugin-inappbrowser"]
 	path = mobileoxford/plugin-sources/cordova-plugin-inappbrowser
 	url = https://github.com/apache/cordova-plugin-inappbrowser.git
+[submodule "mobileoxford/plugin-sources/cordova-plugin-statusbar"]
+	path = mobileoxford/plugin-sources/cordova-plugin-statusbar
+	url = https://github.com/apache/cordova-plugin-statusbar.git
