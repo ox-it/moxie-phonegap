@@ -25,9 +25,6 @@
 [submodule "mobileoxford/plugin-sources/cordova-plugin-geolocation"]
 	path = mobileoxford/plugin-sources/cordova-plugin-geolocation
 	url = https://github.com/apache/cordova-plugin-geolocation.git
-[submodule "mobileoxford/plugin-sources/cordova-labs"]
-	path = mobileoxford/plugin-sources/cordova-labs
-	url = https://github.com/apache/cordova-plugins.git
 [submodule "mobileoxford/plugin-sources/cordova-plugin-inappbrowser"]
 	path = mobileoxford/plugin-sources/cordova-plugin-inappbrowser
 	url = https://github.com/apache/cordova-plugin-inappbrowser.git
