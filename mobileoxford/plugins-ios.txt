@@ -4,7 +4,7 @@ plugin-sources/cordova-plugin-dialogs
 plugin-sources/cordova-plugin-splashscreen
 plugin-sources/cordova-plugin-geolocation
 plugin-sources/cordova-plugin-inappbrowser
-plugin-sources/cordova-labs/statusbar
+plugin-sources/cordova-plugin-statusbar
 plugin-sources/PushPlugin
 plugin-sources/Calendar-PhoneGap-Plugin
 plugin-sources/GAPlugin
