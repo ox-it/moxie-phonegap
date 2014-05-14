@@ -33,10 +33,15 @@ plugins-android:
 
 assets:
 	mkdir -p $(ASSETSDIR)
+	mkdir -p $(ASSETSDIR)/webfonts/weather-icons
+	mkdir -p $(ASSETSDIR)/webfonts/font-awesome
+	cp -R $(MOXIEDIR)/webfonts/weather-icons/font $(ASSETSDIR)/weather-icons
+	cp -R $(MOXIEDIR)/webfonts/weather-icons/css $(ASSETSDIR)/weather-icons
+	cp -R $(MOXIEDIR)/webfonts/font-awesome/fonts $(ASSETSDIR)/font-awesome
+	cp -R $(MOXIEDIR)/webfonts/font-awesome/css $(ASSETSDIR)/font-awesome
+	cp -R $(MOXIEDIR)/images $(ASSETSDIR)
 	cp $(MOXIEDIR)/index-phonegap.html $(ASSETSDIR)/index.html
 	cp $(MOXIEDIR)/config.xml $(ASSETSDIR)/config.xml
-	cp -R $(MOXIEDIR)/images $(ASSETSDIR)
-	cp -R $(MOXIEDIR)/webfonts $(ASSETSDIR)
 	cd $(MOXIEDIR); r.js -o app/moxie.build.js
 	cd $(MOXIEDIR); bundle exec compass compile
 	cp $(MOXIEDIR)/app/main-built.js $(ASSETSDIR)/app.js
