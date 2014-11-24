@@ -3,7 +3,7 @@
 	url = https://github.com/ox-it/moxie-js-client.git
 [submodule "mobileoxford/plugin-sources/PushPlugin"]
 	path = mobileoxford/plugin-sources/PushPlugin
-	url = https://github.com/ox-it/phonegap-pushplugin.git
+	url = https://github.com/phonegap-build/PushPlugin.git
 [submodule "mobileoxford/plugin-sources/GAPlugin"]
 	path = mobileoxford/plugin-sources/GAPlugin
 	url = https://github.com/phonegap-build/GAPlugin.git
