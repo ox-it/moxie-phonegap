@@ -1,26 +1,24 @@
-Moxie Phonegap
-==============
+# Moxie Phonegap
 
 Building Mobile Oxford with Phonegap.
 
-Release
--------
+## Android Release
 
 Run the usual process using Makefile...
 
     phonegap local build android
-  
+
 Go to the specific platform and run the release task with ant:
 
     cd platforms/android
     ant release
-  
+
 Sign the JAR using our keystore:
 
     cd bin
     jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore path-to-keystore MobileOxford-release-unsigned.apk mox_release
-  
-Verify the JAR: 
+
+Verify the JAR:
 
     jarsigner -verify -verbose -certs MobileOxford-release-unsigned.apk
 
