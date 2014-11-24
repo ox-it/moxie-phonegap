@@ -22,13 +22,13 @@ all: assets build-android
 plugins-ios:
 	mkdir -p $(PLUGINSDIR)
 	while read p; do \
-		$(PG) local plugin add $$p; \
+		$(PG) plugin add $$p; \
 	done < $(PLUGINSIOS)
 
 plugins-android:
 	mkdir -p $(PLUGINSDIR)
 	while read p; do \
-		$(PG) local plugin add $$p; \
+		$(PG) plugin add $$p; \
 	done < $(PLUGINSANDROID)
 
 assets:
