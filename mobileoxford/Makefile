@@ -49,7 +49,7 @@ assets:
 
 build-android:
 	mkdir -p $(PLATFORMDIR)
-	$(PG) local build android
+	$(PG) build android
 	mkdir -p bin
 	cp platforms/android/ant-build/$(ANDROIDAPP) bin/
 
