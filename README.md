@@ -27,3 +27,9 @@ Optimise it using zipalign:
     zipalign -v 4 MobileOxford-release-unsigned.apk MobileOxford.apk
 
 See [Android documentation](http://developer.android.com/tools/publishing/app-signing.html#releasemode) for more information; we should also consider automating the release process as much as possible...
+
+## iOS release
+
+Run the usual process (and see jenkins/ios/configuration.xml), but add the following flags:
+
+    phonegap build --device --release
