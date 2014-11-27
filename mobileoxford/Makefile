@@ -22,13 +22,13 @@ all: assets build-android
 plugins-ios:
 	mkdir -p $(PLUGINSDIR)
 	while read p; do \
-		$(PG) local plugin add $$p; \
+		$(PG) plugin add $$p; \
 	done < $(PLUGINSIOS)
 
 plugins-android:
 	mkdir -p $(PLUGINSDIR)
 	while read p; do \
-		$(PG) local plugin add $$p; \
+		$(PG) plugin add $$p; \
 	done < $(PLUGINSANDROID)
 
 assets:
@@ -49,7 +49,7 @@ assets:
 
 build-android:
 	mkdir -p $(PLATFORMDIR)
-	$(PG) local build android
+	$(PG) build android
 	mkdir -p bin
 	cp platforms/android/ant-build/$(ANDROIDAPP) bin/
 
