@@ -1,3 +1,8 @@
+
+# [DEPRECATED] Moxie Phonegap
+
+This plugin is deprecated, i.e. it is no longer maintained. If you want to build the [moxie-js-client  project](https://github.com/ox-it/moxie-js-client) using Cordova, you can follow the instructions listed at [moxie-js-client: Cordova build](https://github.com/ox-it/moxie-js-client#cordova-build)
+
 # Moxie Phonegap
 
 Building Mobile Oxford with Phonegap.
